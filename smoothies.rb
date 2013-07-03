@@ -35,9 +35,11 @@ smoothie_ingredients = {
 # Write a function called blend.
 # It should take all the smoothie ingredients (not the measurements) and chop up and mix all the characters
 # and output a mixed string of characters
-
 def blend(smoothie_ingredients)
+  smoothie_ingredients.keys.join.delete(' ').split('').shuffle.join
 end
+# puts blend(smoothie_ingredients)
+
 
 # create a class called Blender
 # It should have a method that takes an array of ingredients and returns a mixed string of characters.
@@ -46,6 +48,25 @@ end
 # Blend the the smoothie array
 
 class Blender
+  attr_accessor :on
+  def initialize()
+    @on = false
+  end
+
+  def blend(ingredients)
+    if @on == true
+      ingredients.keys.join.delete(' ').split('').shuffle.join
+    else
+      "Try turning the blender on"
+    end
+  end
+
+  def power_on
+    @on = true
+  end
+  def power_off
+    @on = false
+  end
 end
 
 # Move on to gluten_free.rb
