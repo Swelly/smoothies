@@ -1,3 +1,4 @@
+# https://github.com/phlco/smoothies
 require 'pry'
 
 # Every Morning I make a smoothie with the follow ingredients:
@@ -19,7 +20,8 @@ smoothie_ingredients = {
   'brocoli rabe' => '1/4 cup',
   'blue berries' => '1/4 cup',
   'straw berries' => '1/4 cup',
-  'mango' => '1/4 cup'
+  'mango' => '1/4 cup',
+  'hemp milk' => '1 cup'
 }
 
 # Write a function called blend.
