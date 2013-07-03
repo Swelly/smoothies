@@ -49,6 +49,7 @@ end
 
 class Blender
   attr_accessor :on
+
   def initialize()
     @on = false
   end
